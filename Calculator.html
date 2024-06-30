@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<style type="text/css">
+		.main{
+			position: fixed;
+			height: 100vh;
+			width: 100%;
+			top: 0px;
+			left: 0px;
+			background-color: lightgrey;
+			display: flex;
+			justify-content: center;
+			align-items: center
+
+		}
+		.container{
+			background-color: white;
+			width: 290px;
+			height: 450px;
+			top: 0px;
+			left: 0px;
+			display: flex;
+			border-radius:20px ;
+			
+		}
+
+		.op{
+			width: 250px;
+			height: 50px;
+			margin-top:20px;
+			margin-bottom: 15px;
+			background-color: transparent;
+			border-color: darkgrey;
+			border-radius: 2px;
+
+
+
+		}
+
+		input{
+			width: 55px;
+			height: 45px;
+			margin-left: 10px;
+			margin-top: 10px;
+			font-family:Arial black;
+			font-size: 15px;
+
+		}
+		.eql{
+			width: 120px;
+			font-family:Arial black;
+			font-size: 15px;
+			background-color:blue;
+		}
+
+		.operators{
+			color: black;
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+			
+		<div class="container">
+			<form>
+				
+				<div>
+					<input type="text" name="op" align="center" disabled readonly class="op" id="display">
+				</div>
+				<div>
+					<input type="button" name="" value="C"  onclick="clearDisplay()">
+					<input type="button" name="" value="AC" onclick="allClear()">
+					<input type="button" name="" value="/"  onclick="op.value+='/'" class="operators">
+					<input type="button" name="" value="%"  onclick="op.value+='%'" class="operators">
+				</div>
+
+				<div>
+					<input type="button" name="" value="9" onclick="op.value+='9'">
+					<input type="button" name="" value="8" onclick="op.value+='8'">
+					<input type="button" name="" value="7" onclick="op.value+='7'">
+					<input type="button" name="" value="+" onclick="op.value+='+'"  class="operators">
+				</div>
+
+				<div>
+					<input type="button" name="" value="6" onclick="op.value+='6'">
+					<input type="button" name="" value="5" onclick="op.value+='5'">
+					<input type="button" name="" value="4" onclick="op.value+='4'">
+					<input type="button" name="" value="-" onclick="op.value+='-'"  class="operators">
+				</div>
+
+				<div>
+					<input type="button" name="" value="3" onclick="op.value+='3'">
+					<input type="button" name="" value="2" onclick="op.value+='2'">
+					<input type="button" name="" value="1" onclick="op.value+='1'">
+					<input type="button" name="" value="*" onclick="op.value+='*'"  class="operators">
+				</div>
+
+				<div>
+					<input type="button" name="" value="0" onclick="op.value+='0'">
+					<input type="button" name="" value="." onclick="op.value+='.'">
+					<input type="button" name="" value="=" onclick="op.value=eval(op.value)" class="eql">
+				</div>
+			</form>
+
+			<script type="text/javascript">
+		function clearDisplay() {
+			document.getElementById('display').value='appendToDisplay';
+		}
+
+		function allClear(){
+			document.getElementsById('display'.value='appendToDisplay';
+		}
+	</script>
+			
+		</div>
+	</div>
+
+	<!-- <script type="text/javascript">
+		function clearDisplay() {
+			document.getElementById('display').value='appendToDisplay';
+		}
+
+		function allClear(){
+			document.getElementsById('display'.value='appendToDisplay';
+		<!-- }
+	</script> -->
+
+</body>
+</html>
